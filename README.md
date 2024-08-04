@@ -60,10 +60,39 @@ To identify the most suitable detector/descriptor combination for TTC estimation
 ## Project Structure
 
 - **src/**: Source files for the project, including implementations for keypoint matching, TTC computation, and testing.
-- **data/**: Sample data for testing.
+- **dat/**: contains weights
+-**images/**:contains KITTI Sequence (LiDAR + RGB Images)
 - **results/**: Directory to store output results.
-- **CMakeLists.txt**: CMake configuration file.
+- **CMakeLists.txt**: CMake configuration file. 
 - **README.md**: Project documentation.
+
+
+## Dependencies for Running Locally
+* cmake >= 2.8
+  * All OSes: [click here for installation instructions](https://cmake.org/install/)
+* make >= 4.1 (Linux, Mac), 3.81 (Windows)
+  * Linux: make is installed by default on most Linux distros
+  * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
+  * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
+* Git LFS
+  * Weight files are handled using [LFS](https://git-lfs.github.com/)
+  * Install Git LFS before cloning this Repo.
+* OpenCV >= 4.1
+  * This must be compiled from source using the `-D OPENCV_ENABLE_NONFREE=ON` cmake flag for testing the SIFT and SURF detectors.
+  * The OpenCV 4.1.0 source code can be found [here](https://github.com/opencv/opencv/tree/4.1.0)
+* gcc/g++ >= 5.4
+  * Linux: gcc / g++ is installed by default on most Linux distros
+  * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
+  * Windows: recommend using [MinGW](http://www.mingw.org/)
+
+## Basic Build Instructions
+
+1. Clone this repo.
+2. Download dat and images folders from the drive [Link](https://drive.google.com/drive/folders/1U97uQikpWWu4k_WIrCUaPYlFbUkD9P9H?usp=drive_link) and place in the same repo. 
+3. Make a build directory in the top level project directory: `mkdir build && cd build`
+4. Compile: `cmake .. && make`
+5. Run it: `./3D_object_tracking`.
+
 
 ## TTC Calculations for Various Detector and Descriptor Combinations
 
