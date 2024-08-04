@@ -2,6 +2,8 @@
 
 This repository is part of the camera course in the Sensor Fusion Nanodegree. In this project, I implemented several key components to track 3D objects over time, compute Time-to-Collision (TTC) using both Lidar and camera data, and test various detector/descriptor combinations.
 
+<img src="media/demo.gif" width="640" height="400" />
+
 ## Project Overview
 
 <img src="media/dataflow.png" width="750" height="820" />
