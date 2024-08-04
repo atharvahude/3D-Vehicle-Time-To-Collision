@@ -4,6 +4,9 @@ This repository is part of the camera course in the Sensor Fusion Nanodegree. In
 
 ## Project Overview
 
+<img src="media/dataflow.png" width="750" height="820" />
+
+
 This project involves the following tasks:
 
 1. **Matching 3D Objects Over Time**
